@@ -12,6 +12,8 @@
                 {{ $post->title }}
             </a>
         </p>
+        <br>
+        <span>{{ $post->user->name }}</span>
     @endforeach
 
     {{ $posts->links() }}
