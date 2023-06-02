@@ -26,7 +26,7 @@
                                         value="Eliminar"
                                         class="bg-red-600 text-white rounded px-4 py-2"
                                         onclick="return confirm('Desea eliminar?')"
-                                        >
+                                        > 
                                     </form>
                                 </td>
                             </tr>
