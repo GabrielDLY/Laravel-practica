@@ -11,21 +11,11 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
-    }
-
-    public function blog()
-    {     
-        //Consulta de base de datos
-
-        // $posts = Post::get();
-        // $posts = Post::first();
-        // $posts = Post::find();
-        
         $posts = Post::latest()->paginate();
-        return view('blog', ['posts' => $posts]);
-    }
 
+        return view('home',  ['posts' => $posts]);
+    }
+    
     public function post(Post $post)
     {
         //Consulta de base de datos
